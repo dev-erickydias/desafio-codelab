@@ -1,4 +1,4 @@
-cardInfoJson = {
+const dataCards = {
   tenis: [
     {
       nome: "Air Jordan 1 Mid",
@@ -44,4 +44,4 @@ cardInfoJson = {
     },
   ],
 };
-export default cardInfoJson;
+export default dataCards;

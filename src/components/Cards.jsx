@@ -1,25 +1,9 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import getDataBase from "../services/bdService.js";
+import dataCards from "../constants/cardsData"
 
 export default function Cards() {
-    // Estado para armazenar o resultado da base de dados
-  const [data, setData] = useState(null);
 
-  // Use useEffect para buscar os dados ao montar o componente
-  useEffect(() => {
-    getDataBase()
-      .then((res) => {
-        setData(res); // Atualize o estado com o resultado
-      })
-      .catch((error) => {
-        console.error("Erro ao buscar dados:", error);
-      });
-  }, []); // [] garante que o useEffect rode apenas uma vez, ao montar o componente
+  const dataTenis = dataCards.tenis
 
-  // Função para carregar os próximos 6 projetos
-  
   return (
     <section className="cards">
       <div className="cards__titles">
@@ -30,6 +14,17 @@ export default function Cards() {
         </p>
       </div>
       <ul>
+      {dataTenis.map((tenis, index) => (
+        <li key={index} style={{ marginBottom: '20px', listStyleType: 'none' }}>
+          <img
+            src={tenis.image} 
+            alt={tenis.nome} 
+          />
+          <h2>{tenis.nome}</h2>
+          <p>Marca: {tenis.marca}</p>
+          <p>Preço: ${tenis.preco.toFixed(2)}</p>
+        </li>
+      ))}
       </ul>
     </section>
   );

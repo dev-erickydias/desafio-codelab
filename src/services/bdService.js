@@ -3,7 +3,7 @@ import { Client, Databases } from "appwrite";
 const client = new Client()
     .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('151612') // Your project ID
-    //.setKey(process.env.NEXT_PUBLIC_APPWHIT_API_KEY); // Your secret API key
+    .setKey(process.env.NEXT_PUBLIC_APPWHIT_API_KEY); // Your secret API key
 
 const databases = new Databases(client);
 
@@ -18,7 +18,6 @@ const getDataBase = async () => {
 
 return result
 }
-console.log(getDataBase)
 export default getDataBase
 /*
 map((tenis, index) =>(
