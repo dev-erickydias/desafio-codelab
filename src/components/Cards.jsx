@@ -15,14 +15,14 @@ export default function Cards() {
       </div>
       <ul>
       {dataTenis.map((tenis, index) => (
-        <li key={index} style={{ marginBottom: '20px', listStyleType: 'none' }}>
-          <img
+        <li key={index} className="card">
+          <img className="card__image"
             src={tenis.image} 
             alt={tenis.nome} 
           />
-          <h2>{tenis.nome}</h2>
-          <p>Marca: {tenis.marca}</p>
-          <p>Preço: ${tenis.preco.toFixed(2)}</p>
+          <h2 className="card__title">{tenis.nome}</h2>
+          <p className="card__text">Marca: {tenis.marca}</p>
+          <p className="card__text">Preço: ${tenis.preco.toFixed(2)}</p>
         </li>
       ))}
       </ul>
