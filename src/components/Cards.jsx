@@ -13,7 +13,7 @@ export default function Cards() {
           sneakers que busca estilo e conforto.
         </p>
       </div>
-      <ul>
+      <ul className="cards">
       {dataTenis.map((tenis, index) => (
         <li key={index} className="card">
           <img className="card__image"
@@ -21,8 +21,8 @@ export default function Cards() {
             alt={tenis.nome} 
           />
           <h2 className="card__title">{tenis.nome}</h2>
-          <p className="card__text">Marca: {tenis.marca}</p>
-          <p className="card__text">Preço: ${tenis.preco.toFixed(2)}</p>
+          <p className="card__marca">Marca: {tenis.marca}</p>
+          <p className="card__preco">Preço: ${tenis.preco.toFixed(2)}</p>
         </li>
       ))}
       </ul>
