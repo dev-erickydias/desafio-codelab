@@ -1,11 +1,11 @@
 const dataCards = {
   tenis: [
     {
-      nome: "Air Jordan 1 Mid",
+      nome: "Air Jordan 1 Mid SE Bright Citrus",
       marca: "Nike",
       preco: 139.99,
       image:
-        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9921d678-ed65-49c6-bdcb-e85bebeb7c46/AIR+JORDAN+1+MID.png",
+        "https://s3-alpha-sig.figma.com/img/3dab/12da/f60d21bdea49c2b4bd406aaac9edd00c?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hsgnrZdPJ6qqYBgfQFP~1yPwQzSdM1TZJ4xMeofvrNwULkABVQljnTjXnxWpHWaBCpE2-GnSm~ZhhyedVO62moZKYrGUVfN5-X3DBqNzs4I1IYhn~6q7k3W306gBcvcylVLQBqiysdCpY~QVUvDd5Llq8roo30ZjZH1a~feBsUAEeeg0xXBVtTujbdHUgNVpsFCmZftpkT6CATKllE8Awt7G4dnlGbVwgnXndm1KJciyArpRDU9fbYjc4CZzyyZovUANsHOPIxc7VDVdvPYo7AKQe5mg0xxpzFwF75PGOP6lEssd7VlqCJY2QuAG8BCvKDLEd0mv17n0esxymxa2pg__",
     },
     {
       nome: "Nike Air Max Plus Utility",
